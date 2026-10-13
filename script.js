@@ -17,6 +17,9 @@ if (WHATSAPP_NUMERO) {
 const form = document.getElementById("form-orcamento");
 const erro = document.getElementById("form-erro");
 
+// O formulário só existe na página inicial.
+if (form) {
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const nome = form.nome.value.trim();
@@ -35,6 +38,7 @@ form.addEventListener("submit", (e) => {
     erro.hidden = false;
   }
 });
+}
 
 // O vídeo do hero só toca quando está na tela e para se a pessoa preferir menos movimento.
 const heroVideo = document.querySelector(".hero__video video");
