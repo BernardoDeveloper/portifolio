@@ -1,0 +1,6 @@
+# nunca versionar chaves
+id_*
+*.pem
+*.key
+*@*.com
+*@*.com.pub
